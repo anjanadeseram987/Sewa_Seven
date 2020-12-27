@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sewaseven.sewaseven.Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!--   content start         -->
+
+
+            <!--   content end         -->
+
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_car" />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/updateServiceDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#fafafa"
+                    app:srcCompat="@drawable/ic_edit" />
+
+                <ImageButton
+                    android:id="@+id/deleteService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#fafafa"
+                    app:srcCompat="@drawable/ic_icons8_trash" />
+
+                <ImageButton
+                    android:id="@+id/btnPreviousAnnouncements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#fafafa"
+                    app:srcCompat="@drawable/ic_megaphone" />
+
+                <ImageButton
+                    android:id="@+id/btnAddNewAnnouncement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#fafafa"
+                    app:srcCompat="@drawable/ic_icons8_plus" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity=""
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_ratings"/>
+
+                <TextView
+                    android:id="@+id/dashboard_average_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_data1" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:text="@string/service_dashboard_total_followers" />-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:text="@string/service_dashboard_data2" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:text="@string/service_dashboard_followers_this_week" />-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:text="@string/service_dashboard_data2" />-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_name" />
+
+                <TextView
+                    android:id="@+id/dashboard_service_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_data3" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_description" />
+
+                <TextView
+
+                    android:id="@+id/dashboard_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_data3" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_phone" />
+
+                <TextView
+                    android:id="@+id/dashboard_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_data3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_location" />
+
+                <TextView
+                    android:id="@+id/dashboard_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_dashboard_data3" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <Button
+                android:id="@+id/dashboardQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:backgroundTint="#2962FF"
+                android:text="@string/service_dashboard_faq_btn"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/feedbackAndRatings"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:backgroundTint="#2962FF"
+                android:text="@string/service_dashboard_feedback_nd_ratings"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

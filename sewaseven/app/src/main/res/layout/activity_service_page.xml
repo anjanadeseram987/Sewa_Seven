@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    tools:context="com.sewaseven.sewaseven.ServicePage">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_user_home_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnMakeCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#fafafa"
+                    app:srcCompat="@drawable/ic_telephone" />
+
+                <ImageButton
+                    android:id="@+id/btnSeeFAQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#fafafa"
+                    app:srcCompat="@drawable/ic_question" />
+
+                <ImageButton
+                    android:id="@+id/btnAddRatings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#fafafa"
+                    app:srcCompat="@drawable/ic_feedback_small" />
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="@string/service_page_details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/service_page_avg_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_rating" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_views" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_name" />
+
+                <TextView
+
+                    android:id="@+id/service_page_service_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_data" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_phone" />
+
+                <TextView
+
+                    android:id="@+id/service_page_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_data" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_location" />
+
+                <TextView
+
+                    android:id="@+id/service_page_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="xxxxx" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_email" />
+
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_page_data" />
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="@string/service_page_announcement"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <!--            content post-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/service_page_announcements"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+             />
+            <!--           end of content post-->
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

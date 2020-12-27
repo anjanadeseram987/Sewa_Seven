@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sewaseven.sewaseven.RatingsAndReviews">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnCreateUpdateFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@color/btn_background"
+                android:text="@string/rating_list_new_btn"
+                android:textColor="@color/btn_text" />
+        </LinearLayout>
+
+        <!--            content     -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/service_feedback_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:scrollbars="vertical"
+            />
+
+        <!--            end of content -->
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
